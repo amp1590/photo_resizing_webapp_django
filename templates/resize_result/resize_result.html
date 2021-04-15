@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name='viewport' content="width=device-width, initial-scale=1.0" />
+		<!--
+		<style> body {
+			background-color: slateblue;
+		} </style>
+		-->
+		<!-- Style to create button -->
+		<style> 
+			.GFG { 
+				background-color: white; 
+				border: 2px solid black; 
+				color: green; 
+				padding: 5px 10px; 
+				text-align: center; 
+				display: inline-block; 
+				font-size: 20px; 
+				margin: 10px 30px; 
+				cursor: pointer; 
+				text-decoration:none; 
+			} 
+        /* } */
+    	</style> 
+		<title> result </title>
+	
+	</head>
+
+
+	<body>
+		<h1>Your Resized Photos </h1>
+		<a href="{% url 'download_zip_file' %}" class="GFG">
+        		Download the resized photos
+		</a>
+	</body>
+
+</html>
